@@ -18,6 +18,16 @@ app.use(express.static("public"))
 //public assets folder to store some files
 app.use(cookieParser())
 
+//routes
+
+import userRouter from './routes/user.routes.js'
+//routes declaration
+app.use("/api/v1/users",userRouter)
+//http://loaclhost:8000/api/v1/users/register
+
+
+
+
 
 
 
